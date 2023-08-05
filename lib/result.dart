@@ -1,11 +1,11 @@
-//import 'package:flutter/cupertino.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Result extends StatelessWidget {
   final int resultScore;
-  final VoidCallback resetHadler;
+  final VoidCallback resetHandler;
 
-  Result(this.resultScore, this.resetHadler);
+  Result(this.resultScore, this.resetHandler);
 
   String get resultPhrase {
     String resultText;
@@ -31,7 +31,7 @@ class Result extends StatelessWidget {
             style: TextStyle(fontSize: 36, fontWeight: FontWeight.bold),
             textAlign: TextAlign.center,
           ),
-          TextButton(child: Text('Restart Quiz'), onPressed: resetHadler),
+          TextButton(child: Text('Restart Quiz'), onPressed: resetHandler),
         ],
       ),
     );
